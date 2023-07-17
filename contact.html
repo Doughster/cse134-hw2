@@ -1,0 +1,57 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <Title>Contact Me</Title>
+</head>
+
+<body>
+    <nav>
+        <h2>Navigation</h2>         
+        <a href="home.html">Home</a><br>
+        <a href="aboutMe.html">About Me</a><br>
+        <a href="projects.html">My Projects</a><br>
+        <a href="contact.html">Contact Me</a><br>
+        <hr/>
+    </nav>
+
+    <form id="contact">
+        <fieldset>
+            <legend><b>Contact Me</b></legend>
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input required type="text" id="name" name="name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input required type="email" id="email" name="user_email">
+                </li>
+                <li>
+                    <label for="msg">Message:</label><br>
+                    <textarea required id="msg" name="user_message"></textarea>
+                </li>
+            </ul>
+
+            <label for="reason-for-message">How Did You Hear About Me:</label>
+            <input list="reasons" id="reason-for-message" name="reason-for-message">
+
+            <datalist id="reasons">
+                <option value="Hi">
+                <option value="Hello">
+                <option value="Hem">
+            </datalist>
+            </br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+        <hr/>
+    </form>
+
+    <footer>
+        <hr/>
+        <nav>
+            <a href="https://www.instagram.com/jefftdo" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/jeffrey.do.75/" class="fa fa-facebook"></a>
+        </nav>
+    </footer>
+</body>

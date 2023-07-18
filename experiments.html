@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <Title>Experiment Page</Title>
+</head>
+
+<body>
+    <nav>
+        <h2>Navigation</h2>
+        <a href="home.html">HOME</a><br>
+        <a href="aboutMe.html">ABOUT ME</a><br>
+        <a href="projects.html">MY PROJECTS</a><br>
+        <a href="contact.html">CONTACT ME</a><br>
+        <a href="experiments.html">EXPERIMENT PAGE</a><br>
+        <hr>
+    </nav>
+
+    <ol>
+        <p>You need the following to build a website:</p>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <label for="fruits">What's your favorite fruit?</label>
+    <select id="fruits">
+        <optgroup label="Red Fruits">
+            <option>Raspberry</option>
+            <option>Strawberry</option>
+            <option>Apple</option>
+        </optgroup>
+        <optgroup label="Blue Fruits">
+            <option>Blueberry</option>
+            <option>Grapes</option>
+        </optgroup>
+        <optgroup label="Green Fruits">
+            <option>Avocado</option>
+            <option>Watermelon</option>
+            <option>Cucumber</option>
+            <option>Pear</option>
+        </optgroup>
+        <optgroup label="Yellow Fruits">
+            <option>Banana</option>
+            <option>Pineapple</option>
+            <option>Jackfruit</option>
+        </optgroup>
+        <optgroup label="Other"></optgroup>
+    </select>
+    
+    <picture>
+        <br>
+        <source srcset="/Images/randomPerson.jpg" media="(min-width:650px)">
+        <source srcset="/Images/randomPerson.jpg" media="(min-width:465px)">
+        <img src="/Images/randomPerson.jpg" alt="Jeffrey Do (me)" width="600px">
+    </picture>
+ 
+    <p>
+        The HTML <code>code</code> tag defines some text as computer code in a document.<br>
+    </p>
+
+    <audio controls>
+        <source src="highNoon.mp3">
+        <source src="Lawrence .mp3">
+        This browswer does not support HTML5 audio.
+    </audio><br>
+
+    <video controls>
+        <source src="blackVideo.mov">
+        This browswer does not support HTML5 audio.
+    </video><br>
+
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        var canvas=document.getElementById('myCanvas');
+        var ctx=canvas.getContext("2d");
+        ctx.fillStyle='green';
+        ctx.fillRect(0,0,190,95);
+    </script>
+
+    <svg>
+        <circle cx="50" cy="50" r="40" fill="yellow" />
+    </svg>
+
+    <template>
+        <h1>
+            This is a template example
+            <small>I love Web Dev</small>
+        </h1>
+    </template>
+
+
+</body>

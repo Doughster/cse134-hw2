@@ -8,47 +8,51 @@
 </head>
 
 <body>
-    <nav>
-        <h2>Navigation</h2>         
-        <a href="home.html">HOME</a><br>
-        <a href="aboutMe.html">ABOUT ME</a><br>
-        <a href="projects.html">MY PROJECTS</a><br>
-        <a href="contact.html">CONTACT ME</a><br>
-        <a href="experiments.html">EXPERIMENT PAGE</a><br>
-        <hr>
-    </nav>
-
-    <form id="contact">
-        <fieldset>
-            <legend><b>Contact Me</b></legend>
+    <header>
+        <nav class="nav">
             <ul>
-                <li>
-                    <label for="name">Name:</label>
-                    <input required type="text" id="name" name="name">
-                </li>
-                <li>
-                    <label for="email">Email:</label>
-                    <input required type="email" id="email" name="user_email">
-                </li>
-                <li>
-                    <label for="msg">Message:</label><br>
-                    <textarea required id="msg" name="user_message"></textarea>
-                </li>
+                <li><a href="experiments.html">EXPERIMENT PAGE</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+                <li><a href="projects.html">MY PROJECTS</a></li>
+                <li><a href="aboutMe.html">ABOUT ME</a></li>
+                <li><a href="home.html">HOME</a><br></li>
             </ul>
+        </nav>
+    </header>
 
-            <label for="reason-for-message">How Did You Hear About Me:</label>
-            <input list="reasons" id="reason-for-message" name="reason-for-message">
-            <datalist id="reasons">
-                <option value="Friend/Family">
-                <option value="LinkedIn">
-                <option value="HandShake">
-                <option value="Other">
-            </datalist>
-            <br>
-            <button type="submit">Submit</button>
-        </fieldset>
-        <hr>
-    </form>
+    <main>
+        <form id="contact">
+            <fieldset>
+                <legend><b>Contact Me</b></legend>
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input required type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input required type="email" id="email" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label><br>
+                        <textarea required id="msg" name="user_message"></textarea>
+                    </li>
+                </ul>
+    
+                <label for="reason-for-message">How Did You Hear About Me:</label>
+                <input list="reasons" id="reason-for-message" name="reason-for-message">
+                <datalist id="reasons">
+                    <option value="Friend/Family">
+                    <option value="LinkedIn">
+                    <option value="HandShake">
+                    <option value="Other">
+                </datalist>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <hr>
+        </form>
+    </main>
 
     <footer>
         <hr>
